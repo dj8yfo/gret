@@ -347,7 +347,7 @@ impl<'a, 'b> Menu<'a, 'b> {
                 command.arg(format!("+{line_num}"));
                 command.arg(selected.path);
             }
-            "hx" => {
+            "hx" | "hx_ide_open" => {
                 command.arg(format!("{}:{line_num}", selected.path.to_string_lossy()));
             }
             "code" => {
